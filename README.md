@@ -1,0 +1,3 @@
+# @red-cup-engineering/tidepool-keepers
+
+The permissionless bots: cycle close, overdue marking, question quiescence, head relay, and later worklist and H¹ submission. Anyone may run them; the house runs them on systemd timers in the shape `cold-red-gate` already uses. Signing goes through `key-management-services-section`'s `sign-with-wallet` under a bounded mandate (allowed contracts and selectors, zero native value); every keeper emits a paper intent and a receipt when no mandate is armed. A keeper never holds pool funds and never has a privileged role; every call it makes is one any member could make.
